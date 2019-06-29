@@ -22,16 +22,14 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
 				</ul>
 				<ul class="navbar-nav justify-content-end">
 					<li class="nav-item">
-						<a id="example-button" class="btn btn-primary" href="#" role="button">Example</a>
+						<div class="btn-group">
+							<a id="example-button" class="btn btn-primary" href="#" role="button" v-on:click="currentLocale=`en-US`">English</a>
+							<a id="example-button" class="btn btn-primary" href="#" role="button" v-on:click="currentLocale=`fr-FR`">French</a>
+							<a id="example-button" class="btn btn-primary" href="#" role="button" v-on:click="currentLocale=`ru-RU`">Russian</a>
+						</div>
 					</li>
 				</ul>
 			</div>

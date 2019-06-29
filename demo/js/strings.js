@@ -6,18 +6,28 @@ const strings = {
 			"Great library!"
 		)
 		.language(
+			"fr",
+			"La bibliothèque incroyable!"
+		)
+		.language(
 			"ru",
 			"Отличная библиотека!"
 		),
 	description: new LocalizableString()
 		.setDefaultLocale("en-US")
-		.countryWithData(
-			"US",
+		.languageWithData(
+			"en",
 			(data) => {
 				let timesCount = new English().isPluralForm(data.count)
 					? `${data.count} times`
 					: `${data.count} time`;
 				return `${timesCount} better than the other existing solutions.`;
+			}
+		)
+		.languageWithData(
+			"fr",
+			(data) => {
+				return `${data.count} fois mieux que les autres solutions existantes.`;
 			}
 		)
 		.languageWithData(

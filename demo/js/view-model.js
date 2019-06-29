@@ -3,7 +3,7 @@ function createViewModel(rootElementSelector) {
 		el: rootElementSelector,
 		data: {
 			logo: {
-				text: "Logo"
+				text: "Strings.js"
 			},
 			strings: strings,
 			currentLocale: "en-US"
