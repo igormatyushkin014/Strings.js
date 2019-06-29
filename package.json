@@ -1,8 +1,8 @@
 {
   "name": "@imatyushkin/strings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy localization for JavaScript",
-  "main": "src/strings.js",
+  "main": "src/server/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/igormatyushkin014/Strings.js/issues"
   },
-  "homepage": "https://github.com/igormatyushkin014/Strings.js#readme"
+  "homepage": "https://github.com/igormatyushkin014/Strings.js#readme",
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
 }
