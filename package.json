@@ -1,5 +1,5 @@
 {
-  "name": "strings",
+  "name": "@imatyushkin/strings",
   "version": "1.0.0",
   "description": "Easy localization for JavaScript",
   "main": "src/strings.js",
