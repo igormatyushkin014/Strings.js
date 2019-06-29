@@ -1,4 +1,7 @@
 const strings = {
+	/*
+		Title.
+	*/
 	title: new LocalizableString()
 		.setDefaultLocale("en-US")
 		.language(
@@ -13,12 +16,16 @@ const strings = {
 			"ru",
 			"Отличная библиотека!"
 		),
+
+	/*
+		Description.
+	*/
 	description: new LocalizableString()
 		.setDefaultLocale("en-US")
 		.languageWithData(
 			"en",
 			(data) => {
-				let timesCount = new English().isPluralForm(data.count)
+				let timesCount = English.isPluralForm(data.count)
 					? `${data.count} times`
 					: `${data.count} time`;
 				return `${timesCount} better than the other existing solutions.`;
@@ -33,7 +40,7 @@ const strings = {
 		.languageWithData(
 			"ru",
 			(data) => {
-				let количествоРаз = new Russian().isPluralForm(data.count)
+				let количествоРаз = Russian.isPluralForm(data.count)
 					? `${data.count} раз`
 					: `${data.count} раза`;
 				return `В ${количествоРаз} лучше, чем другие существующие решения.`;
@@ -43,14 +50,14 @@ const strings = {
 
 class English {
 
-	isPluralForm(count) {
+	static isPluralForm(count) {
 		return count != 1;
 	}
 }
 
 class Russian {
 
-	isPluralForm(count) {
+	static isPluralForm(count) {
 		let d10 = count % 10;
 		let d100 = count % 100;
 
@@ -65,7 +72,7 @@ class Russian {
 }
 
 console.log(
-	strings.title.getText(),
+	strings.title.getText(null),
 	strings.description.getText({
 		count: 712638712634
 	})
