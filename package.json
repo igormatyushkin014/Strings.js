@@ -1,0 +1,19 @@
+{
+  "name": "strings",
+  "version": "1.0.0",
+  "description": "Easy localization for JavaScript",
+  "main": "src/strings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igormatyushkin014/Strings.js.git"
+  },
+  "author": "Igor Matyushkin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/igormatyushkin014/Strings.js/issues"
+  },
+  "homepage": "https://github.com/igormatyushkin014/Strings.js#readme"
+}
