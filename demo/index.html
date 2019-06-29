@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
+	<!-- Internal CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	<title>App</title>
+</head>
+<body>
+	<div id="app" v-cloak>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">{{ logo.text }}</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav justify-content-end">
+					<li class="nav-item">
+						<a id="example-button" class="btn btn-primary" href="#" role="button">Example</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid">
+			<h1>{{ strings.title.getText({}, currentLocale) }}</h1>
+			{{ strings.description.getText({count: 712638712634}, currentLocale) }}
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="libraries/jquery/jquery-3.4.1.js"></script>
+	<!-- Popper -->
+	<script type="text/javascript" src="libraries/popper/popper.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="libraries/bootstrap/js/bootstrap.bundle.js"></script>
+	<!-- Vue -->
+	<script type="text/javascript" src="libraries/vue/vue.js"></script>
+	<!-- Axios -->
+	<script type="text/javascript" src="libraries/axios/axios.min.js"></script>
+	<!-- Locale -->
+	<script type="text/javascript" src="../source/locale.js"></script>
+	<!-- Internal JS -->
+	<script type="text/javascript" src="js/strings.js"></script>
+	<script type="text/javascript" src="js/view-model.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
