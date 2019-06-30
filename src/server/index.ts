@@ -12,7 +12,7 @@ import {
 } from "./localizable-string";
 
 module.exports = {
-	LocalizationRule,
-	LocaleReader,
-	LocalizableString
+	LocalizationRule: require("./localization-rule"),
+	LocaleReader: LocaleReader,
+	LocalizableString: LocalizableString
 };
