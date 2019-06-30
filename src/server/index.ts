@@ -1,12 +1,12 @@
-import {
+export {
 	LocalizationRule,
 	LocalizationRuleFormatter
 } from "./localization-rule";
 
-import {
+export {
 	LocaleReader
 } from "./locale-reader";
 
-import {
+export {
 	LocalizableString
 } from "./localizable-string";
