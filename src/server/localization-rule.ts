@@ -5,8 +5,8 @@ import {
 export class LocalizationRule {
 
 	constructor(
-		public languageCode: string,
-		public countryCode: string,
+		public languageCode: string | undefined,
+		public countryCode: string | undefined,
 		public formatter: LocalizationRuleFormatter
 	) {
 	}
@@ -18,11 +18,17 @@ export class LocalizationRule {
 			locale
 		);
 
-		if (this.languageCode && this.languageCode.toLowerCase() !== localeReader.language.toLowerCase()) {
+		if (this.languageCode
+			&& localeReader.language
+			&& this.languageCode.toLowerCase() !== localeReader.language.toLowerCase()
+		) {
 			return false;
 		}
 
-		if (this.countryCode && this.countryCode.toLowerCase() !== localeReader.country.toLowerCase()) {
+		if (this.countryCode
+			&& localeReader.country
+			&& this.countryCode.toLowerCase() !== localeReader.country.toLowerCase()
+		) {
 			return false;
 		}
 

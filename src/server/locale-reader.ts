@@ -5,7 +5,7 @@ export class LocaleReader {
 	) {
 	}
 
-	public get language(): string {
+	public get language(): string | undefined {
 		let components = this.locale.split("-");
 
 		if (components.length) {
@@ -15,7 +15,7 @@ export class LocaleReader {
 		}
 	}
 
-	public get country() {
+	public get country(): string | undefined {
 		let components = this.locale.split("-");
 
 		if (components.length > 1) {

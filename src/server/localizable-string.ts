@@ -73,12 +73,12 @@ export class LocalizableString {
 		@return {String} Current instance.
 	 */
 	language(
-		code,
-		value
+		code: string,
+		value: string
 	) {
 		let rule = new LocalizationRule(
 			code,
-			null,
+			undefined,
 			(data) => {
 				return value;
 			}
@@ -101,7 +101,7 @@ export class LocalizableString {
 	) {
 		let rule = new LocalizationRule(
 			code,
-			null,
+			undefined,
 			(data) => {
 				return formatter(
 					data
@@ -125,7 +125,7 @@ export class LocalizableString {
 		value: string
 	) {
 		let rule = new LocalizationRule(
-			null,
+			undefined,
 			code,
 			(data) => {
 				return value;
@@ -148,7 +148,7 @@ export class LocalizableString {
 		formatter: LocalizationRuleFormatter
 	) {
 		let rule = new LocalizationRule(
-			null,
+			undefined,
 			code,
 			(data) => {
 				return formatter(
@@ -189,7 +189,7 @@ export class LocalizableString {
 		data: any,
 		locale: string
 	) {
-		let getRuleForLocale = (locale) => {
+		let getRuleForLocale = (locale: string) => {
 			return this.rules.find((rule) => {
 				return rule.isCompatibleWithLocale(
 					locale
@@ -197,12 +197,12 @@ export class LocalizableString {
 			});
 		};
 
-		let findAppropriateRule = () => {
+		let findAppropriateRule = (): LocalizationRule | undefined => {
 			if (locale) {
 				return getRuleForLocale(locale);
 			}
 
-			var rule: LocalizationRule;
+			var rule: LocalizationRule | undefined;
 
 			if (this.defaultLocale) {
 				rule = getRuleForLocale(this.defaultLocale);
