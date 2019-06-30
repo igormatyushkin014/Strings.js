@@ -121,8 +121,8 @@ export class LocalizableString {
 		@return {String} Current instance.
 	 */
 	country(
-		code,
-		value
+		code: string,
+		value: string
 	) {
 		let rule = new LocalizationRule(
 			null,
@@ -169,7 +169,9 @@ export class LocalizableString {
 		@param {String} locale Default locale.
 		@return {String} Current instance.
 	 */
-	setDefaultLocale(locale) {
+	setDefaultLocale(
+		locale: string
+	) {
 		this.defaultLocale = locale;
 		return this;
 	}
@@ -184,8 +186,8 @@ export class LocalizableString {
 		@return {String} Text value based on current locale.
 	 */
 	getText(
-		data,
-		locale
+		data: any,
+		locale: string
 	) {
 		let getRuleForLocale = (locale) => {
 			return this.rules.find((rule) => {
