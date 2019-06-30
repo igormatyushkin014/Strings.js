@@ -1,6 +1,6 @@
 {
   "name": "@imatyushkin/strings",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy localization for JavaScript",
   "main": "src/server/index.ts",
   "scripts": {
