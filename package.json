@@ -2,8 +2,10 @@
   "name": "@imatyushkin/strings",
   "version": "1.0.4",
   "description": "Easy localization for JavaScript",
-  "main": "src/server/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
