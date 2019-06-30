@@ -10,9 +10,3 @@ import {
 import {
 	LocalizableString
 } from "./localizable-string";
-
-module.exports = {
-	LocalizationRule,
-	LocaleReader,
-	LocalizableString
-}
