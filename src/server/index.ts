@@ -11,11 +11,8 @@ import {
 	LocalizableString
 } from "./localizable-string";
 
-export class Localization {
-}
-
 module.exports = {
-	LocalizationRule: require("./localization-rule"),
-	LocaleReader: LocaleReader,
-	LocalizableString: LocalizableString
-};
+	LocalizationRule,
+	LocaleReader,
+	LocalizableString
+}
