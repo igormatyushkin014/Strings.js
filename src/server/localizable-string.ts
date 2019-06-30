@@ -187,7 +187,7 @@ export class LocalizableString {
 	 */
 	getText(
 		data: any,
-		locale: string
+		locale: string | undefined
 	) {
 		let getRuleForLocale = (locale: string) => {
 			return this.rules.find((rule) => {
