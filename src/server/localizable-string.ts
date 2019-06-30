@@ -186,8 +186,8 @@ export class LocalizableString {
 		@return {String} Text value based on current locale.
 	 */
 	getText(
-		data: any,
-		locale: string | undefined
+		data: any = undefined,
+		locale: string | undefined = undefined
 	) {
 		let getRuleForLocale = (locale: string) => {
 			return this.rules.find((rule) => {
