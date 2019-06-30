@@ -1,13 +1,12 @@
 {
   "name": "@imatyushkin/strings",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Easy localization for JavaScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
